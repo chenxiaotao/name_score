@@ -4,3 +4,4 @@
 *.swp
 .rbenv-gemsets
 .ruby-version
+/log/*.log
