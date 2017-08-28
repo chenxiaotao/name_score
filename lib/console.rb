@@ -25,8 +25,7 @@ module Console
     @@mutex.lock
     Dir.mkdir("#{LOG_PATH}") unless Dir.exists?("#{LOG_PATH}")
     logfile = File.open("#{LOG_PATH}/name_result.log", File::WRONLY | File::APPEND | File::CREAT)
-    logfile << message.to_s
-    super(message.to_s)
+    logfile << message.to_s + "\n"
     logfile.close
     @@mutex.unlock
   end

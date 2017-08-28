@@ -10,6 +10,7 @@ require 'mechanize'
 require_relative '../lib/console'
 require_relative '../lib/user_config'
 require_relative '../lib/word_libary'
+require_relative '../lib/name_score'
 
 
 ROOT_PATH = File.expand_path('../', File.dirname(__FILE__))
